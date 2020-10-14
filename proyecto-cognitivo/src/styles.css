@@ -70,13 +70,17 @@ body{
 
     .fancy-button {
         border-radius: 20px;
-        width: 250px;
+        width: 50%;
         height: auto;
         margin: 20px;
         margin-left: 22%;
         font-family: sans-serif;
         font-size: 20px;
-
+        cursor: pointer;
+    }
+    .fancy-button:hover {
+        background-color: #333;
+        color: white;
     }
     
     .marked-word {

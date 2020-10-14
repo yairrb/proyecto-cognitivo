@@ -1,43 +1,11 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
-
-var abecedario = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Qu","R","S","U","V","Y","Z"];
-var vowels = "AEIOU"; 
-var sarasa = ['E', 'A', 'O', 'S', 'R','N', 'I', 'D', 'L', 'C', 'T', 'U', 'M', 'P', 'B', 'G', 'V', 'Y', 'QU', 'H', 'F', 'Z', 'J','X']
-var ArrayOfVowels = ["A", "E", "I", "O", "U"];
-var vowelsPerGame = 0;
 var result = [];
 var words=[];
-
-//dados
-
-var myDices = [
-           // ["D","T","O","A","R","I"],
-            ["A","E","N","S","D","O"],
-            ["S","D","E","O","Ñ","A"],
-            ["O","A","I","E","A","U"],
-            ["E","D","Qu","O","H","S"],
-            ["A","R","L","A","E","B"],
-            ["N","R","I","F","C","T"],
-            ["L","O","E","Z","B","N"],
-            ["H","X","U","I","R","E"],
-            ["A","I","T","G","N","U"],
-            ["N","L","O","J","V","S"],
-            ["N","E","L","S","C","O"],
-            ["O","E","L","P","C","S"],
-            ["R","A","A","M","C","E"],
-            ["A","E","N","S","D","O"],
-            ["O","S","N","E","C","A"],
-            ["A","E","T","P","D","O"]]
+var gameGenerator = new GameGenerator();
 
 function generateGame() {
-
-    for(let i = 0 ; i < 16 ; i++){
-        let ranIndex = getRandomInt(0,5);
-        var letter = myDices[i][ranIndex];
-
-        result.push(letter);
-    }
+    result = gameGenerator.throwDices();
 }
 //https://es.wikipedia.org/wiki/Frecuencia_de_aparici%C3%B3n_de_letras#:~:text=La%20E%20y%20la%20A,supera%20el%201%2C5%25)
 
@@ -119,11 +87,6 @@ addWordButton[0].addEventListener("click", function() {
     divSpacer.appendChild(removeButton);
     listOfWords.append(divSpacer);
     resetWord();
-
-    //listOfWords.append(spanWord);
-    //listOfWords.append(removeButton);
-
-    
 });
 
 
