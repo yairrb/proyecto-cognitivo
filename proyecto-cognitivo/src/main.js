@@ -9,36 +9,35 @@ var vowelsPerGame = 0;
 var result = [];
 var words=[];
 
+//dados
+
+var myDices = [
+           // ["D","T","O","A","R","I"],
+            ["A","E","N","S","D","O"],
+            ["S","D","E","O","Ñ","A"],
+            ["O","A","I","E","A","U"],
+            ["E","D","Qu","O","H","S"],
+            ["A","R","L","A","E","B"],
+            ["N","R","I","F","C","T"],
+            ["L","O","E","Z","B","N"],
+            ["H","X","U","I","R","E"],
+            ["A","I","T","G","N","U"],
+            ["N","L","O","J","V","S"],
+            ["N","E","L","S","C","O"],
+            ["O","E","L","P","C","S"],
+            ["R","A","A","M","C","E"],
+            ["A","E","N","S","D","O"],
+            ["O","S","N","E","C","A"],
+            ["A","E","T","P","D","O"]]
+
 function generateGame() {
 
-    //TODO: cambiar abecedario por un nombre decente
     for(let i = 0 ; i < 16 ; i++){
-        let ranIndex = getRandomInt(0,23);
-        var letter = sarasa [ranIndex];
-        if ( i > 0 && result[i-1].includes(letter)  ){
-            ranIndex = getRandomInt(0,23)
-            letter = sarasa[ranIndex];
-        }
-        if (vowels.includes(letter) ){
-            vowelsPerGame++;
-        }
+        let ranIndex = getRandomInt(0,5);
+        var letter = myDices[i][ranIndex];
+
         result.push(letter);
     }
-
-    //fix for lack of definition, replace later...
-    while (vowelsPerGame < 8 ){
-        console.warn("fixing game")
-        let randIndex = getRandomInt(0,4);
-        let randPosition = getRandomInt(0,15);
-        let letterForReplacement = ArrayOfVowels
-        [randIndex];
-        if ( !vowels.includes(result[randPosition]) ){
-            result[randPosition] = letterForReplacement;
-            vowelsPerGame++;
-            console.log(vowelsPerGame);
-        }
-    }
-    console.log(result);
 }
 //https://es.wikipedia.org/wiki/Frecuencia_de_aparici%C3%B3n_de_letras#:~:text=La%20E%20y%20la%20A,supera%20el%201%2C5%25)
 
