@@ -10,6 +10,8 @@ Asimismo, en esta tarea están implicados los procesos atencionales, las funcion
 
 # Reglas del Juego:
 
-1- El juego consiste en armar la mayor cantidad de palabras a partir del contacto entre las letras de los cuadros. Las palabras pueden armarse con las letras que se toquen en sentido horizontal, vertical o diagonal. 
-2- Para armar una palabra, no pueden utilizarse más de una vez las letras que pertenecen a un mismo cuadro.  
+1- El juego consiste en armar la mayor cantidad de palabras a partir del contacto entre las letras de los cuadros. Las palabras pueden armarse con las letras que se toquen en sentido horizontal, vertical o diagonal.
+
+2- Para armar una palabra, no pueden utilizarse más de una vez las letras que pertenecen a un mismo cuadro. 
+
 3- No son válidas las palabras con menos de cuatro letras, los lunfardos, ni los nombres propios. 
