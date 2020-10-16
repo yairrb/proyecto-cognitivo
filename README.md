@@ -7,7 +7,8 @@ Asimismo, en esta tarea están implicados los procesos atencionales, las funcion
 
 [1] Acuña, M. y Risiga, M. (1997). Talleres de Activación Cerebral y Entrenamiento de la Memoria. Guía para profesionales que trabajan con pacientes añosos. Buenos Aires: Paidós.
 
-Reglas del Juego:
+
+# Reglas del Juego:
 
 1- El juego consiste en armar la mayor cantidad de palabras a partir del contacto entre las letras de los cuadros. Las palabras pueden armarse con las letras que se toquen en sentido horizontal, vertical o diagonal. 
 2- Para armar una palabra, no pueden utilizarse más de una vez las letras que pertenecen a un mismo cuadro.  
