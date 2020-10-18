@@ -31,8 +31,6 @@ var GameGenerator = function () {
             ["O", "S", "N", "E", "C", "A"],
             ["A", "E", "T", "P", "D", "O"]];
     
-        console.log(myDices)
-
         shuffle(myDices);
         let game = [];
         for (let i = 0; i < 16; i++) {
