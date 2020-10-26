@@ -79,4 +79,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         resetWord();
     });
 
+
+    let newGameButton = document.getElementById("new-game");
+    newGameButton.addEventListener("click", function() {
+        location.reload();
+    })
+
 });
